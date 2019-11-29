@@ -112,6 +112,6 @@ class __TwigTemplate_8d6a72070a3eda0c8873989c2ccee0088b62c01ab2daae9581a1da16495
     <button class=\"btn\">Supprimer</button>
 </form>
 {% endblock %}
-", "room/_delete_form.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/room/_delete_form.html.twig");
+", "room/_delete_form.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/room/_delete_form.html.twig");
     }
 }

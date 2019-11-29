@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
-
+use Symfony\Component\HttpFoundation\File\File;
 /**
  * @Route("_owner/room")
  */
@@ -49,7 +49,7 @@ class OwnerRoomController extends AbstractController
             $imagefile = $room->getImageFile();
             if($imagefile) {
                 $mimetype = $imagefile->getMimeType();
-                $room->setContentType($mimetype);
+              //  $room->setContentType($mimetype);
             }
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($room);
@@ -71,9 +71,6 @@ class OwnerRoomController extends AbstractController
     {
         $user = $this->getUser();
         $client = $user->getClients();
-        if (!$client){
-            throw $this->createAccessDeniedException();
-        }
         return $this->render('room/show.html.twig', [
             'room' => $room,
             'client' => $client,

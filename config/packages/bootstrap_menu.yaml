@@ -22,12 +22,7 @@ bootstrap_menu:
               label: "S'inscrire"
               route: 'home'
             logout:
-<<<<<<< HEAD
               label: "Logout"
               route: 'app_logout'
               roles: ["ROLE_CLIENT","ROLE_ADMIN","ROLE_OWNER"]
-=======
-              label: 'Se déconnecter'
-              route: 'app_logout'
-              roles: ["ROLE_USER"]
->>>>>>> 8a245b8a93875077fb00da5a98dd53b40aa9999e
+            

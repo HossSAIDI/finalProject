@@ -413,6 +413,6 @@ class __TwigTemplate_51bb35b786f10f7c4d49693ed4407e74612b46bd021a76b69f3cee1272a
 {% block body %}
     {% include '@Twig/Exception/exception.html.twig' %}
 {% endblock %}
-", "@Twig/Exception/exception_full.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/vendor/symfony/twig-bundle/Resources/views/Exception/exception_full.html.twig");
+", "@Twig/Exception/exception_full.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/vendor/symfony/twig-bundle/Resources/views/Exception/exception_full.html.twig");
     }
 }

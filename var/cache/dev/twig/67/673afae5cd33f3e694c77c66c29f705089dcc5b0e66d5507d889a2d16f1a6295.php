@@ -233,6 +233,6 @@ class __TwigTemplate_83cb2a6f50bd851772183d1e76359e53ead503f8401a2f1879e0a9b95a2
 \t</div>
 </div>
      
-{% endblock %}", "clientreservationlist/clientreservationlist.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/clientreservationlist/clientreservationlist.html.twig");
+{% endblock %}", "clientreservationlist/clientreservationlist.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/clientreservationlist/clientreservationlist.html.twig");
     }
 }

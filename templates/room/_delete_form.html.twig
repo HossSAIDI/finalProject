@@ -1,4 +1,3 @@
-{% extends 'base.html.twig'%}
 {% block body %}
 
 <form method="post" action="{{ path('room_delete', {'id': room.id}) }}" onsubmit="return confirm('Êtes vous sur de vouloir supprimer cette chambre ?');">

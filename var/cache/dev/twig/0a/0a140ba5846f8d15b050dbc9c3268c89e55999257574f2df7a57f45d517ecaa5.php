@@ -67,23 +67,29 @@ class __TwigTemplate_e358e31e7cb0f5aeb1ae33f19e7ba76b79184065bc49aeeed9a5b5bc2fe
         // line 4
         echo "
 
-<title>Edit Room</title>
-   <h1>Editer ma chambre</h1>
+<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('";
+        // line 6
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/img_bg_3.jpg"), "html", null, true);
+        echo "');background-repeat:no-repeat;background-position:center center; width:100%;\">
+\t\t<div class=\"container\">
+\t\t\t<div class=\"row\">
+\t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
+\t\t\t\t\t<h2>Editer ma chambre  </h2>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t</div>
+\t</div>   
 
     ";
-        // line 9
+        // line 16
         echo twig_include($this->env, $context, "room/_form.html.twig", ["button_label" => "Mettre à jour"]);
         echo "
 
     <a href=\"";
-        // line 11
+        // line 18
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("room_index");
         echo "\">Retour</a>
 
-    ";
-        // line 13
-        echo twig_include($this->env, $context, "room/_delete_form.html.twig");
-        echo "
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -105,7 +111,7 @@ class __TwigTemplate_e358e31e7cb0f5aeb1ae33f19e7ba76b79184065bc49aeeed9a5b5bc2fe
 
     public function getDebugInfo()
     {
-        return array (  85 => 13,  80 => 11,  75 => 9,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  90 => 18,  85 => 16,  72 => 6,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -115,15 +121,21 @@ class __TwigTemplate_e358e31e7cb0f5aeb1ae33f19e7ba76b79184065bc49aeeed9a5b5bc2fe
 {% block body %}
 
 
-<title>Edit Room</title>
-   <h1>Editer ma chambre</h1>
+<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('{{ asset('assets/images/img_bg_3.jpg')}}');background-repeat:no-repeat;background-position:center center; width:100%;\">
+\t\t<div class=\"container\">
+\t\t\t<div class=\"row\">
+\t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
+\t\t\t\t\t<h2>Editer ma chambre  </h2>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t</div>
+\t</div>   
 
     {{ include('room/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
 
     <a href=\"{{ path('room_index') }}\">Retour</a>
 
-    {{ include('room/_delete_form.html.twig') }}
 {% endblock %}
-", "room/edit.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/room/edit.html.twig");
+", "room/edit.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/room/edit.html.twig");
     }
 }

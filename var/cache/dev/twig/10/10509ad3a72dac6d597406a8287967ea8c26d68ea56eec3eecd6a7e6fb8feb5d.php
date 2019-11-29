@@ -66,7 +66,10 @@ class __TwigTemplate_afee44aed8c241abec33aa717e63c61442793e837478aadf158cca587c5
 
         // line 4
         echo "<title>New Reservation</title>
-<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\">
+<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('";
+        // line 5
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/img_bg_3.jpg"), "html", null, true);
+        echo "');background-repeat:no-repeat;background-position:center center; width:100%;\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
@@ -106,7 +109,7 @@ class __TwigTemplate_afee44aed8c241abec33aa717e63c61442793e837478aadf158cca587c5
 
     public function getDebugInfo()
     {
-        return array (  86 => 17,  81 => 15,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  89 => 17,  84 => 15,  71 => 5,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -115,7 +118,7 @@ class __TwigTemplate_afee44aed8c241abec33aa717e63c61442793e837478aadf158cca587c5
 
 {% block body %}
 <title>New Reservation</title>
-<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\">
+<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('{{ asset('assets/images/img_bg_3.jpg')}}');background-repeat:no-repeat;background-position:center center; width:100%;\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
@@ -129,6 +132,6 @@ class __TwigTemplate_afee44aed8c241abec33aa717e63c61442793e837478aadf158cca587c5
 
     <a href=\"{{ path('room_show', {'id': room.id}) }}\">Retour</a>
 {% endblock %}
-", "reservation/new.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/reservation/new.html.twig");
+", "reservation/new.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/reservation/new.html.twig");
     }
 }

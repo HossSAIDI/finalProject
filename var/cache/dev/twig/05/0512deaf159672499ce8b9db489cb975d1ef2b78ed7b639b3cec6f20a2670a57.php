@@ -65,24 +65,34 @@ class __TwigTemplate_9f862c5544072a8dd1e8be2be60830d3c11782b0b514989123de5032fa8
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
-        echo "<title>Edit Client</title>
-
-    <h1>Edit Client</h1>
+        echo "<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/img_bg_3.jpg"), "html", null, true);
+        echo "');background-repeat:no-repeat;background-position:center center; width:100%;\">
+\t\t<div class=\"container\">
+\t\t\t<div class=\"row\">
+\t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
+\t\t\t\t\t<h2>Edit Client </h2>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t</div>
+\t</div>
 
     ";
-        // line 7
+        // line 13
         echo twig_include($this->env, $context, "client/_form.html.twig", ["button_label" => "Update"]);
         echo "
 
     <a href=\"";
-        // line 9
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("client_index");
+        // line 15
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("region_index");
         echo "\">back to list</a>
 
     ";
-        // line 11
+        // line 17
         echo twig_include($this->env, $context, "client/_delete_form.html.twig");
         echo "
+    \t\t<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -104,23 +114,31 @@ class __TwigTemplate_9f862c5544072a8dd1e8be2be60830d3c11782b0b514989123de5032fa8
 
     public function getDebugInfo()
     {
-        return array (  84 => 11,  79 => 9,  74 => 7,  68 => 3,  58 => 2,  35 => 1,);
+        return array (  92 => 17,  87 => 15,  82 => 13,  68 => 3,  58 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig'%}
 {% block body %}
-<title>Edit Client</title>
-
-    <h1>Edit Client</h1>
+<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('{{ asset('assets/images/img_bg_3.jpg')}}');background-repeat:no-repeat;background-position:center center; width:100%;\">
+\t\t<div class=\"container\">
+\t\t\t<div class=\"row\">
+\t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
+\t\t\t\t\t<h2>Edit Client </h2>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t</div>
+\t</div>
 
     {{ include('client/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href=\"{{ path('client_index') }}\">back to list</a>
+    <a href=\"{{ path('region_index') }}\">back to list</a>
 
     {{ include('client/_delete_form.html.twig') }}
+    \t\t<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
 {% endblock %}
-", "client/edit.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/client/edit.html.twig");
+", "client/edit.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/client/edit.html.twig");
     }
 }

@@ -122,47 +122,53 @@ class __TwigTemplate_1f30454fd40a943b0155f6a193795fc92edfe17f8fb7db2ca9a490e7d3e
             // line 33
             echo "             <div class=\"row contact-info-wrap\">
 \t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>Le prix</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">";
-            // line 35
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "price", [], "any", false, false, false, 35), "html", null, true);
+            // line 36
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "price", [], "any", false, false, false, 36), "html", null, true);
             echo "</p>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>Résumé</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">";
-            // line 38
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "summary", [], "any", false, false, false, 38), "html", null, true);
+            // line 40
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "summary", [], "any", false, false, false, 40), "html", null, true);
             echo "</p>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-md-3\">
-\t\t\t\t\t\t<p style=\"font-size:16px;\">";
-            // line 41
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "description", [], "any", false, false, false, 41), "html", null, true);
-            echo "</p>
-\t\t\t\t\t</div>
-\t\t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>Description</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">";
             // line 44
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "address", [], "any", false, false, false, 44), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "description", [], "any", false, false, false, 44), "html", null, true);
             echo "</p>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>adresse</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">";
-            // line 47
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "superficy", [], "any", false, false, false, 47), "html", null, true);
+            // line 48
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "address", [], "any", false, false, false, 48), "html", null, true);
             echo "</p>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>superficie</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">";
-            // line 50
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "capacity", [], "any", false, false, false, 50), "html", null, true);
+            // line 52
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "superficy", [], "any", false, false, false, 52), "html", null, true);
+            echo "</p>
+\t\t\t\t\t</div>
+\t\t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>capacité</a>
+\t\t\t\t\t\t<p style=\"font-size:16px;\">";
+            // line 56
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["room"], "capacity", [], "any", false, false, false, 56), "html", null, true);
             echo "</p>
 \t\t\t\t\t</div>
 \t\t
 <div class=\"row text-center\">
 \t<div class=\"col-md-10 col-md-offset-1 animate-box\">
 \t\t<button class=\"btn btn-success\"><a href=\"";
-            // line 55
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("room_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["room"], "id", [], "any", false, false, false, 55)]), "html", null, true);
+            // line 61
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("room_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["room"], "id", [], "any", false, false, false, 61)]), "html", null, true);
             echo " style=\"color:black; font-size:18px;\">Editer</a></button>
 \t</div>
 </div>
@@ -173,7 +179,7 @@ class __TwigTemplate_1f30454fd40a943b0155f6a193795fc92edfe17f8fb7db2ca9a490e7d3e
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['room'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 61
+        // line 67
         echo "
 ";
         
@@ -196,7 +202,7 @@ class __TwigTemplate_1f30454fd40a943b0155f6a193795fc92edfe17f8fb7db2ca9a490e7d3e
 
     public function getDebugInfo()
     {
-        return array (  177 => 61,  165 => 55,  157 => 50,  151 => 47,  145 => 44,  139 => 41,  133 => 38,  127 => 35,  123 => 33,  119 => 32,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  183 => 67,  171 => 61,  163 => 56,  156 => 52,  149 => 48,  142 => 44,  135 => 40,  128 => 36,  123 => 33,  119 => 32,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -235,21 +241,27 @@ class __TwigTemplate_1f30454fd40a943b0155f6a193795fc92edfe17f8fb7db2ca9a490e7d3e
                  {% for room in rooms %}
              <div class=\"row contact-info-wrap\">
 \t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>Le prix</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">{{ room.price }}</p>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>Résumé</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">{{ room.summary }}</p>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>Description</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">{{ room.description }}</p>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>adresse</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">{{ room.address }}</p>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>superficie</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">{{ room.superficy }}</p>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-md-3\">
+\t\t\t\t\t\t<a>capacité</a>
 \t\t\t\t\t\t<p style=\"font-size:16px;\">{{ room.capacity }}</p>
 \t\t\t\t\t</div>
 \t\t
@@ -262,6 +274,6 @@ class __TwigTemplate_1f30454fd40a943b0155f6a193795fc92edfe17f8fb7db2ca9a490e7d3e
 
 {% endfor %}
 
-{% endblock %}", "ownerroomlist/ownerroomlist.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/ownerroomlist/ownerroomlist.html.twig");
+{% endblock %}", "ownerroomlist/ownerroomlist.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/ownerroomlist/ownerroomlist.html.twig");
     }
 }

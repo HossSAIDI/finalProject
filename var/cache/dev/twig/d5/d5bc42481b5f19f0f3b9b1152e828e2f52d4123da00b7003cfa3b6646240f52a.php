@@ -204,7 +204,7 @@ class __TwigTemplate_15f89e9b638b7ba54984bd20d37a38a5fd7fe956652a7fb90f8be28c2bc
             \t\t\t<a href=\"";
                 // line 115
                 echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("owner_profile", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["app"] ?? null), "user", [], "any", false, false, false, 115), "users", [], "any", false, false, false, 115), "id", [], "any", false, false, false, 115)]), "html", null, true);
-                echo "\" class=\"txt1\" style=\"font-size: 18px\"><i class=\"fa fa-arrow-left\"></i>&nbsp;&nbsp;&nbsp; Mon profil</a>
+                echo "\" class=\"txt1\" style=\"font-size: 18px\">&nbsp;&nbsp;&nbsp; Mon profil</a>
        \t\t\t\t </div> 
        \t\t    ";
             }
@@ -612,7 +612,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     \t        {% endif %}
     \t        {% if app.user.users %}
         \t\t\t<div class=\"col-md-1\">
-            \t\t\t<a href=\"{{ path('owner_profile', {'id': app.user.users.id}) }}\" class=\"txt1\" style=\"font-size: 18px\"><i class=\"fa fa-arrow-left\"></i>&nbsp;&nbsp;&nbsp; Mon profil</a>
+            \t\t\t<a href=\"{{ path('owner_profile', {'id': app.user.users.id}) }}\" class=\"txt1\" style=\"font-size: 18px\">&nbsp;&nbsp;&nbsp; Mon profil</a>
        \t\t\t\t </div> 
        \t\t    {% endif %}
        \t\t{% endif %}
@@ -713,6 +713,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 \t</body>
 </html>
 
-", "base.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/base.html.twig");
+", "base.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/base.html.twig");
     }
 }

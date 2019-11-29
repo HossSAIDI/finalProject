@@ -50,7 +50,7 @@ class __TwigTemplate_503d2870d8c3e0dad2129c128d0ccbb2ddaa1d44896fc4717efa7d56aae
 \t<div class=\"container\">
 \t\t<div class=\"row\">
         \t<div class=\"col-md-10 col-md-offset-1 animate-box\">
-        \t\t<h3>Describe your room</h3>
+        \t\t<h3>Editez votre profile</h3>
         \t\t<div class=\"row form-group\">
         \t\t\t<div class=\"col-md-12\">
                         ";
@@ -104,8 +104,9 @@ class __TwigTemplate_503d2870d8c3e0dad2129c128d0ccbb2ddaa1d44896fc4717efa7d56aae
         </div>
     </div>
 </div>
+
 ";
-        // line 44
+        // line 45
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock(($context["form"] ?? null), 'form_end');
         echo "
 ";
@@ -129,7 +130,7 @@ class __TwigTemplate_503d2870d8c3e0dad2129c128d0ccbb2ddaa1d44896fc4717efa7d56aae
 
     public function getDebugInfo()
     {
-        return array (  109 => 44,  100 => 38,  94 => 35,  85 => 29,  76 => 23,  67 => 17,  58 => 11,  46 => 2,  43 => 1,);
+        return array (  110 => 45,  100 => 38,  94 => 35,  85 => 29,  76 => 23,  67 => 17,  58 => 11,  46 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -141,7 +142,7 @@ class __TwigTemplate_503d2870d8c3e0dad2129c128d0ccbb2ddaa1d44896fc4717efa7d56aae
 \t<div class=\"container\">
 \t\t<div class=\"row\">
         \t<div class=\"col-md-10 col-md-offset-1 animate-box\">
-        \t\t<h3>Describe your room</h3>
+        \t\t<h3>Editez votre profile</h3>
         \t\t<div class=\"row form-group\">
         \t\t\t<div class=\"col-md-12\">
                         {{ form_row(form.firstname) }}
@@ -177,7 +178,8 @@ class __TwigTemplate_503d2870d8c3e0dad2129c128d0ccbb2ddaa1d44896fc4717efa7d56aae
         </div>
     </div>
 </div>
+
 {{ form_end(form) }}
-", "client/_form.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/client/_form.html.twig");
+", "client/_form.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/client/_form.html.twig");
     }
 }

@@ -81,7 +81,7 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator
 
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, $providerKey)
     {
-<<<<<<< HEAD
+
        // return new RedirectResponse($this->urlGenerator->generate("home"));
         
         if ($targetPath = $this->getTargetPath($request->getSession(), $providerKey)) {
@@ -111,9 +111,9 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator
             
             //throw new \Exception('TODO: provide a valid redirect inside '.__FILE__);
             //}
-=======
+
         return new RedirectResponse($this->urlGenerator->generate("liste_region"));
->>>>>>> 8a245b8a93875077fb00da5a98dd53b40aa9999e
+
     }
     
 

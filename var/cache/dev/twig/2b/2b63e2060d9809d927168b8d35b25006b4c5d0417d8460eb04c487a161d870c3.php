@@ -154,6 +154,6 @@ class __TwigTemplate_5cd271d79b8a54fb65b7d2e117352960b14fa5f7b8aa71942281e9cad6e
 
 
 {% endblock %}
-", "registration/register.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/registration/register.html.twig");
+", "registration/register.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/registration/register.html.twig");
     }
 }

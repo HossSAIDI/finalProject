@@ -3,12 +3,18 @@
 {% block body %}
 
 
-<title>Edit Room</title>
-   <h1>Editer ma chambre</h1>
+<div id="colorlib-rooms" class="colorlib-light-grey" style="background-image : url('{{ asset('assets/images/img_bg_3.jpg')}}');background-repeat:no-repeat;background-position:center center; width:100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+					<h2>Editer ma chambre  </h2>
+				</div>
+			</div>
+		</div>
+	</div>   
 
     {{ include('room/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
 
     <a href="{{ path('room_index') }}">Retour</a>
 
-    {{ include('room/_delete_form.html.twig') }}
 {% endblock %}

@@ -70,7 +70,10 @@ class __TwigTemplate_b0848ecb5ded1129655f9c12c0b35c6ea5f3ced0821ff952fa1bbdac595
 <aside id=\"colorlib-hero\">
 \t\t\t<div class=\"flexslider\">
 \t\t\t\t<ul class=\"slides\">
-\t\t\t   \t<li style=\"background-image: url(images/img_bg_5.jpg);\">
+\t\t\t   \t<li id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('";
+        // line 8
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/img_bg_3.jpg"), "html", null, true);
+        echo "');background-repeat:no-repeat;background-position:center center; width:100%;\">
 \t\t\t   \t\t<div class=\"overlay\"></div>
 \t\t\t   \t\t<div class=\"container-fluid\">
 \t\t\t   \t\t\t<div class=\"row\">
@@ -147,7 +150,7 @@ class __TwigTemplate_b0848ecb5ded1129655f9c12c0b35c6ea5f3ced0821ff952fa1bbdac595
 
     public function getDebugInfo()
     {
-        return array (  121 => 45,  112 => 39,  103 => 33,  82 => 15,  68 => 3,  58 => 2,  35 => 1,);
+        return array (  124 => 45,  115 => 39,  106 => 33,  85 => 15,  75 => 8,  68 => 3,  58 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -159,7 +162,7 @@ class __TwigTemplate_b0848ecb5ded1129655f9c12c0b35c6ea5f3ced0821ff952fa1bbdac595
 <aside id=\"colorlib-hero\">
 \t\t\t<div class=\"flexslider\">
 \t\t\t\t<ul class=\"slides\">
-\t\t\t   \t<li style=\"background-image: url(images/img_bg_5.jpg);\">
+\t\t\t   \t<li id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('{{ asset('assets/images/img_bg_3.jpg')}}');background-repeat:no-repeat;background-position:center center; width:100%;\">
 \t\t\t   \t\t<div class=\"overlay\"></div>
 \t\t\t   \t\t<div class=\"container-fluid\">
 \t\t\t   \t\t\t<div class=\"row\">
@@ -204,6 +207,6 @@ class __TwigTemplate_b0848ecb5ded1129655f9c12c0b35c6ea5f3ced0821ff952fa1bbdac595
 \t\t</div>
  
 {% endblock %}
-", "profile/profile.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/profile/profile.html.twig");
+", "profile/profile.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/profile/profile.html.twig");
     }
 }

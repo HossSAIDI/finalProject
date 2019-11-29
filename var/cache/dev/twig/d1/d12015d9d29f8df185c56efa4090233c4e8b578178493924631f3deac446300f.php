@@ -67,74 +67,93 @@ class __TwigTemplate_48b065d7224598d3c17ee6eea218f226575ac30a508f86c487ee2041207
         // line 6
         echo "\t
 
+\t<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('";
+        // line 8
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/img_bg_3.jpg"), "html", null, true);
+        echo "');background-repeat:no-repeat;background-position:center center; width:100%;\">
+\t\t<div class=\"container\">
+\t\t\t<div class=\"row\">
+\t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
+\t\t\t\t\t<h2>Découvrez cette chambre</h2>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t</div>
+\t</div>
 \t
 
-    <h1>";
-        // line 10
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "summary", [], "any", false, false, false, 10), "html", null, true);
-        echo "</h1>
+<br><br><br>
+ 
+\t<div class=\"row\">
+\t\t<div class=\"col-lg-2\"></div>
+\t\t<div class=\"col-lg-8\">
+\t\t\t<table class=\"table table-hover\">
+        <thead>
+            <tr>
 
- <table class=\"table\">
-    <tbody>
-
-        <tr>
             <th>Image</th>
             <td><img src=\"";
-        // line 17
+        // line 29
         echo twig_escape_filter($this->env, $this->extensions['Vich\UploaderBundle\Twig\Extension\UploaderExtension']->asset(($context["room"] ?? null), "imageFile"), "html", null, true);
         echo "\"/></td>
         </tr>
         <tr>
-            <th scope=\"row\">Description</th>
+            <th scope=\"row\">Summary</th>
             <td>";
-        // line 21
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "description", [], "any", false, false, false, 21), "html", null, true);
+        // line 33
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "summary", [], "any", false, false, false, 33), "html", null, true);
+        echo "</td>
+        </tr>
+        <tr>
+         <th scope=\"row\">Description</th>
+            <td>";
+        // line 37
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "description", [], "any", false, false, false, 37), "html", null, true);
         echo "</td>
         </tr>
         <tr>
             <th scope=\"row\">Capacité</th>
             <td>";
-        // line 25
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "capacity", [], "any", false, false, false, 25), "html", null, true);
+        // line 41
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "capacity", [], "any", false, false, false, 41), "html", null, true);
         echo "</td>
         </tr>
         <tr>
             <th scope=\"row\">Superficie</th>
             <td>";
-        // line 29
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "superficy", [], "any", false, false, false, 29), "html", null, true);
+        // line 45
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "superficy", [], "any", false, false, false, 45), "html", null, true);
         echo "</td>
         </tr>
         <tr>
             <th scope=\"row\">Prix</th>
             <td>";
-        // line 33
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "price", [], "any", false, false, false, 33), "html", null, true);
+        // line 49
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "price", [], "any", false, false, false, 49), "html", null, true);
         echo "</td>
         </tr>
         <tr>
             <th scope=\"row\">Adresse</th>
             <td>";
-        // line 37
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "address", [], "any", false, false, false, 37), "html", null, true);
+        // line 53
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "address", [], "any", false, false, false, 53), "html", null, true);
         echo "</td>
         </tr>
         <tr>
             <th scope=\"row\">Région</th>
             <td>";
-        // line 41
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "region", [], "any", false, false, false, 41), "html", null, true);
+        // line 57
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "region", [], "any", false, false, false, 57), "html", null, true);
         echo "</td>
         </tr>
         <tr>
             <th scope=\"row\">Date Indisponible</th>
             <td>
             ";
-        // line 46
+        // line 62
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "reservations", [], "any", false, false, false, 46));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "reservations", [], "any", false, false, false, 62));
         foreach ($context['_seq'] as $context["_key"] => $context["reservation"]) {
-            // line 47
+            // line 63
             echo "                ";
             echo twig_escape_filter($this->env, $context["reservation"], "html", null, true);
             echo "
@@ -145,35 +164,35 @@ class __TwigTemplate_48b065d7224598d3c17ee6eea218f226575ac30a508f86c487ee2041207
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['reservation'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 51
+        // line 67
         echo "            </td>
         </tr>
         <tr>
             <th scope=\"row\">Commentaires</th>
             ";
-        // line 55
-        if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "comments", [], "any", false, false, false, 55)) > 0)) {
-            // line 56
+        // line 71
+        if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "comments", [], "any", false, false, false, 71)) > 0)) {
+            // line 72
             echo "                <td>
                 ";
-            // line 57
+            // line 73
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "comments", [], "any", false, false, false, 57));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "comments", [], "any", false, false, false, 73));
             foreach ($context['_seq'] as $context["_key"] => $context["comment"]) {
-                // line 58
+                // line 74
                 echo "                    ";
                 echo twig_escape_filter($this->env, $context["comment"], "html", null, true);
                 echo "
                     ";
-                // line 59
-                if ((($context["client"] ?? null) == twig_get_attribute($this->env, $this->source, $context["comment"], "client", [], "any", false, false, false, 59))) {
-                    // line 60
+                // line 75
+                if ((($context["client"] ?? null) == twig_get_attribute($this->env, $this->source, $context["comment"], "client", [], "any", false, false, false, 75))) {
+                    // line 76
                     echo "                    <a style=\"margin-left: 100px\" href=\"";
-                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reservation_delete", ["id" => twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "id", [], "any", false, false, false, 60)]), "html", null, true);
+                    echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reservation_delete", ["id" => twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "id", [], "any", false, false, false, 76)]), "html", null, true);
                     echo "\">Supprimer ce commentaire</a>
                     ";
                 }
-                // line 62
+                // line 78
                 echo "                    <br>
                     <br>
                 ";
@@ -181,66 +200,65 @@ class __TwigTemplate_48b065d7224598d3c17ee6eea218f226575ac30a508f86c487ee2041207
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['comment'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 65
+            // line 81
             echo "                </td>
             ";
         } else {
-            // line 67
+            // line 83
             echo "                <td>Aucun commentaire</td>
             ";
         }
-        // line 69
+        // line 85
         echo "
         </tr>
     </tbody>
     </table>
-
+</div>
+\t\t<div class=\"col-lg-2\"></div>
+\t</div>
     ";
-        // line 74
+        // line 92
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_OWNER")) {
-            // line 75
+            // line 93
             echo "    ";
-            echo twig_include($this->env, $context, "room/_delete_form.html.twig");
-            echo "
-    ";
         }
-        // line 77
+        // line 94
         echo "
 
     ";
-        // line 79
+        // line 96
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_CLIENT")) {
-            // line 80
+            // line 97
             echo "        <td> <a href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reservation_new", ["id" => twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "id", [], "any", false, false, false, 80)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("reservation_new", ["id" => twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "id", [], "any", false, false, false, 97)]), "html", null, true);
             echo "\">Faire une réservation</a></td>
         <br>
         <td><a href=\"";
-            // line 82
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("comment_new", ["id" => twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "id", [], "any", false, false, false, 82)]), "html", null, true);
+            // line 99
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("comment_new", ["id" => twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "id", [], "any", false, false, false, 99)]), "html", null, true);
             echo "\">Commenter</a></td>
 
     ";
         }
-        // line 85
+        // line 102
         echo "    <br>
 
     <a href=\"";
-        // line 87
+        // line 104
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("room_index");
         echo "\">Retour</a>
 
     <br>
     ";
-        // line 90
+        // line 107
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_OWNER")) {
-            // line 91
+            // line 108
             echo "        <a href=\"";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("room_edit", ["id" => twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "id", [], "any", false, false, false, 91)]), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("room_edit", ["id" => twig_get_attribute($this->env, $this->source, ($context["room"] ?? null), "id", [], "any", false, false, false, 108)]), "html", null, true);
             echo "\">Editer la chambre</a>
     ";
         }
-        // line 93
+        // line 110
         echo "
 
 
@@ -267,7 +285,7 @@ class __TwigTemplate_48b065d7224598d3c17ee6eea218f226575ac30a508f86c487ee2041207
 
     public function getDebugInfo()
     {
-        return array (  244 => 93,  238 => 91,  236 => 90,  230 => 87,  226 => 85,  220 => 82,  214 => 80,  212 => 79,  208 => 77,  202 => 75,  200 => 74,  193 => 69,  189 => 67,  185 => 65,  177 => 62,  171 => 60,  169 => 59,  164 => 58,  160 => 57,  157 => 56,  155 => 55,  149 => 51,  138 => 47,  134 => 46,  126 => 41,  119 => 37,  112 => 33,  105 => 29,  98 => 25,  91 => 21,  84 => 17,  74 => 10,  68 => 6,  58 => 5,  35 => 1,);
+        return array (  262 => 110,  256 => 108,  254 => 107,  248 => 104,  244 => 102,  238 => 99,  232 => 97,  230 => 96,  226 => 94,  223 => 93,  221 => 92,  212 => 85,  208 => 83,  204 => 81,  196 => 78,  190 => 76,  188 => 75,  183 => 74,  179 => 73,  176 => 72,  174 => 71,  168 => 67,  157 => 63,  153 => 62,  145 => 57,  138 => 53,  131 => 49,  124 => 45,  117 => 41,  110 => 37,  103 => 33,  96 => 29,  72 => 8,  68 => 6,  58 => 5,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -279,19 +297,35 @@ class __TwigTemplate_48b065d7224598d3c17ee6eea218f226575ac30a508f86c487ee2041207
 {% block body %}
 \t
 
+\t<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('{{ asset('assets/images/img_bg_3.jpg')}}');background-repeat:no-repeat;background-position:center center; width:100%;\">
+\t\t<div class=\"container\">
+\t\t\t<div class=\"row\">
+\t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
+\t\t\t\t\t<h2>Découvrez cette chambre</h2>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t</div>
+\t</div>
 \t
 
-    <h1>{{ room.summary }}</h1>
+<br><br><br>
+ 
+\t<div class=\"row\">
+\t\t<div class=\"col-lg-2\"></div>
+\t\t<div class=\"col-lg-8\">
+\t\t\t<table class=\"table table-hover\">
+        <thead>
+            <tr>
 
- <table class=\"table\">
-    <tbody>
-
-        <tr>
             <th>Image</th>
             <td><img src=\"{{ vich_uploader_asset(room, 'imageFile') }}\"/></td>
         </tr>
         <tr>
-            <th scope=\"row\">Description</th>
+            <th scope=\"row\">Summary</th>
+            <td>{{ room.summary }}</td>
+        </tr>
+        <tr>
+         <th scope=\"row\">Description</th>
             <td>{{ room.description }}</td>
         </tr>
         <tr>
@@ -344,9 +378,10 @@ class __TwigTemplate_48b065d7224598d3c17ee6eea218f226575ac30a508f86c487ee2041207
         </tr>
     </tbody>
     </table>
-
+</div>
+\t\t<div class=\"col-lg-2\"></div>
+\t</div>
     {% if is_granted('ROLE_OWNER')  %}
-    {{ include('room/_delete_form.html.twig') }}
     {% endif %}
 
 
@@ -371,6 +406,6 @@ class __TwigTemplate_48b065d7224598d3c17ee6eea218f226575ac30a508f86c487ee2041207
 
 {% endblock %}
     
-", "room/show.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/room/show.html.twig");
+", "room/show.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/room/show.html.twig");
     }
 }

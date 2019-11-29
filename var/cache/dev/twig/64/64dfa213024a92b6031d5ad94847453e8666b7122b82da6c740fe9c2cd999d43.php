@@ -134,15 +134,15 @@ class __TwigTemplate_38edd502d014fe0effbe5d882f4dce4e082cfe61a6cab9f1abb1df26613
             echo "</td>
                 <td>
                     ";
-            // line 15
+            // line 37
             if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-                // line 16
+                // line 38
                 echo "                        <a href=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("region_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["region"], "id", [], "any", false, false, false, 16)]), "html", null, true);
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("region_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["region"], "id", [], "any", false, false, false, 38)]), "html", null, true);
                 echo "\" style=\"margin-left: 100px\">Editer cette region</a>
                     ";
             }
-            // line 18
+            // line 40
             echo "                </td>
                 <br>
                
@@ -152,11 +152,7 @@ class __TwigTemplate_38edd502d014fe0effbe5d882f4dce4e082cfe61a6cab9f1abb1df26613
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-<<<<<<< HEAD
-            // line 41
-=======
-            // line 24
->>>>>>> 8a245b8a93875077fb00da5a98dd53b40aa9999e
+            // line 46
             echo "            <tr>
                 <td colspan=\"5\">Aucune occurence trouvée</td>
             </tr>
@@ -165,32 +161,25 @@ class __TwigTemplate_38edd502d014fe0effbe5d882f4dce4e082cfe61a6cab9f1abb1df26613
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['region'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-<<<<<<< HEAD
-        // line 45
-        echo "       ";
-        // line 54
-        echo "                
-        </tbody>
-\t</table> 
-\t</div>   
-=======
-        // line 28
+        // line 50
         echo "
+
         ";
-        // line 29
+        // line 52
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 30
+            // line 53
             echo "            <br>
             <a href=\"";
-            // line 31
+            // line 54
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("region_new");
             echo "\">Créer une nouvelle région</a>
         ";
         }
-        // line 33
-        echo "        </tbody>
-    
->>>>>>> 8a245b8a93875077fb00da5a98dd53b40aa9999e
+        // line 56
+        echo "
+        </tbody>
+\t</table> 
+\t</div>   
 
     
 ";
@@ -214,11 +203,7 @@ class __TwigTemplate_38edd502d014fe0effbe5d882f4dce4e082cfe61a6cab9f1abb1df26613
 
     public function getDebugInfo()
     {
-<<<<<<< HEAD
-        return array (  155 => 54,  153 => 45,  144 => 41,  133 => 35,  129 => 34,  125 => 33,  121 => 31,  116 => 30,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
-=======
-        return array (  153 => 33,  148 => 31,  145 => 30,  143 => 29,  140 => 28,  131 => 24,  121 => 18,  115 => 16,  113 => 15,  108 => 13,  102 => 12,  99 => 11,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
->>>>>>> 8a245b8a93875077fb00da5a98dd53b40aa9999e
+        return array (  179 => 56,  174 => 54,  171 => 53,  169 => 52,  165 => 50,  156 => 46,  146 => 40,  140 => 38,  138 => 37,  133 => 35,  129 => 34,  125 => 33,  121 => 31,  116 => 30,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -272,29 +257,18 @@ class __TwigTemplate_38edd502d014fe0effbe5d882f4dce4e082cfe61a6cab9f1abb1df26613
                 <td colspan=\"5\">Aucune occurence trouvée</td>
             </tr>
         {% endfor %}
-<<<<<<< HEAD
-       {# <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
-      \t\t\t  <td>
-                    {% if is_granted('ROLE_OWNER')  %}
-                    <a href=\"{{ path('owner_profile', {'id': owner.id}) }}\"style=\"color: blue; font-size: 16px;\">Voir votre profile&nbsp;&nbsp;&nbsp;</a>
-                    {% else   %}
-                    <a href=\"{{ path('client_profile', {'id': user.id}) }}\"style=\"color: green; font-size: 16px;\">Voir votre profile</a>
-                    {% endif %}
-    \t\t      </td>
-        <!-- ------------------------------------------------------------------------------------------------------------------------------- -->#}
-                
-=======
+
 
         {% if is_granted('ROLE_ADMIN') %}
             <br>
             <a href=\"{{ path('region_new') }}\">Créer une nouvelle région</a>
         {% endif %}
->>>>>>> 8a245b8a93875077fb00da5a98dd53b40aa9999e
+
         </tbody>
 \t</table> 
 \t</div>   
 
     
-{% endblock %}", "room_par_region/index.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/room_par_region/index.html.twig");
+{% endblock %}", "room_par_region/index.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/room_par_region/index.html.twig");
     }
 }

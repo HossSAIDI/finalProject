@@ -713,6 +713,6 @@ class __TwigTemplate_7186588ced829b6ed2045c2dd79fa9899464698866b4061c169015bacc9
     \t<script src=\"{{ asset('assets/js/main.js') }}\"></script>
     {% endblock %}
 \t</body>
-</html>", "/home/home.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/home/home.html.twig");
+</html>", "/home/home.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/home/home.html.twig");
     }
 }

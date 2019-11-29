@@ -268,6 +268,6 @@ class __TwigTemplate_0d04cc9841e7c5a995211c643a0f842e3d0b94b85f4bb1c61eff41f67b1
     {%- set label = label|trans|default(label) -%}
     {{- block('form_label') -}}
 {%- endblock -%}
-", "@VichUploader/Form/fields.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig");
+", "@VichUploader/Form/fields.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig");
     }
 }

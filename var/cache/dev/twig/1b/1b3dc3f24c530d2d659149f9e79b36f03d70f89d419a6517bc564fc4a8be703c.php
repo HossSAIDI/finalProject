@@ -85,7 +85,9 @@ class __TwigTemplate_d8a86c59f60b17af7a44c760a70fda5468aff5037a075df011d2b044cb0
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\">
+        echo "\t<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/img_bg_3.jpg"), "html", null, true);
+        echo "');background-repeat:no-repeat;background-position:center center; width:100%;\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
@@ -220,7 +222,7 @@ class __TwigTemplate_d8a86c59f60b17af7a44c760a70fda5468aff5037a075df011d2b044cb0
 
     public function getDebugInfo()
     {
-        return array (  195 => 62,  182 => 55,  175 => 52,  169 => 50,  167 => 49,  164 => 48,  158 => 46,  156 => 45,  152 => 44,  148 => 43,  144 => 42,  140 => 41,  136 => 40,  132 => 39,  128 => 37,  123 => 36,  94 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  197 => 62,  184 => 55,  177 => 52,  171 => 50,  169 => 49,  166 => 48,  160 => 46,  158 => 45,  154 => 44,  150 => 43,  146 => 42,  142 => 41,  138 => 40,  134 => 39,  130 => 37,  125 => 36,  96 => 10,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -230,7 +232,7 @@ class __TwigTemplate_d8a86c59f60b17af7a44c760a70fda5468aff5037a075df011d2b044cb0
 {% block title %}Region{% endblock %}
 
 {% block body %}
-<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\">
+\t<div id=\"colorlib-rooms\" class=\"colorlib-light-grey\" style=\"background-image : url('{{ asset('assets/images/img_bg_3.jpg')}}');background-repeat:no-repeat;background-position:center center; width:100%;\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
@@ -295,6 +297,6 @@ class __TwigTemplate_d8a86c59f60b17af7a44c760a70fda5468aff5037a075df011d2b044cb0
   
 {% endblock %}
    
-  ", "room_par_region/show.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/room_par_region/show.html.twig");
+  ", "room_par_region/show.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/room_par_region/show.html.twig");
     }
 }

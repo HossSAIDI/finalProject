@@ -115,6 +115,6 @@ class __TwigTemplate_48151e120dcf090f81539f47679d79508a53260646d9a483865a5aed1bf
 
     <a href=\"{{ path('client_index') }}\">back to list</a>
 {% endblock %}
-", "client/new.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/client/new.html.twig");
+", "client/new.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/client/new.html.twig");
     }
 }

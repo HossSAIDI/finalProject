@@ -74,7 +74,7 @@ class __TwigTemplate_ee7ce1f9d50d5996115e81a78898d42cb460d6c7ea826f40f6ba598040e
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
-\t\t\t\t\t<h2>Reservation index </h2>
+\t\t\t\t\t<h2>Les réservation  </h2>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -182,7 +182,7 @@ class __TwigTemplate_ee7ce1f9d50d5996115e81a78898d42cb460d6c7ea826f40f6ba598040e
 \t\t<div class=\"container\">
 \t\t\t<div class=\"row\">
 \t\t\t\t<div class=\"col-md-6 col-md-offset-3 text-center colorlib-heading animate-box\">
-\t\t\t\t\t<h2>Reservation index </h2>
+\t\t\t\t\t<h2>Les réservation  </h2>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
@@ -226,6 +226,6 @@ class __TwigTemplate_ee7ce1f9d50d5996115e81a78898d42cb460d6c7ea826f40f6ba598040e
 \t\t<div class=\"col-lg-2\"></div>
 \t</div>
 {% endblock %}
-", "reservation/index.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/reservation/index.html.twig");
+", "reservation/index.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/reservation/index.html.twig");
     }
 }

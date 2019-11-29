@@ -94,6 +94,6 @@ class __TwigTemplate_da62eec2ebffe286fd062c5d6c6a03c2ab6b812bd115dcc4d87cb24dfaa
   </li>
   {% endif %}
 {% endapply %}
-", "@BootstrapMenu/link.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/vendor/camurphy/bootstrap-menu-bundle/Resources/views/link.html.twig");
+", "@BootstrapMenu/link.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/vendor/camurphy/bootstrap-menu-bundle/Resources/views/link.html.twig");
     }
 }

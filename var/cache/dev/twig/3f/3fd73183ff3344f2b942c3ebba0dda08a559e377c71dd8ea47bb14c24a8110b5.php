@@ -134,6 +134,6 @@ class __TwigTemplate_1e8e8e70606ef5695e90d99f60e1af429a543e763c96de39db05f2dcbf0
 
     <a href=\"{{ path('room_index') }}\">Retour</a>
 {% endblock %}
-", "room/new.html.twig", "/home/houssem_saidi/CSC4101/projet_final/AgVoy-Fin/templates/room/new.html.twig");
+", "room/new.html.twig", "/home/houssem_saidi/CSC4101/projetFinal/AgVoy-Fin/templates/room/new.html.twig");
     }
 }

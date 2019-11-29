@@ -47,24 +47,13 @@
                 <td colspan="5">Aucune occurence trouvée</td>
             </tr>
         {% endfor %}
-<<<<<<< HEAD
-       {# <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
-      			  <td>
-                    {% if is_granted('ROLE_OWNER')  %}
-                    <a href="{{ path('owner_profile', {'id': owner.id}) }}"style="color: blue; font-size: 16px;">Voir votre profile&nbsp;&nbsp;&nbsp;</a>
-                    {% else   %}
-                    <a href="{{ path('client_profile', {'id': user.id}) }}"style="color: green; font-size: 16px;">Voir votre profile</a>
-                    {% endif %}
-    		      </td>
-        <!-- ------------------------------------------------------------------------------------------------------------------------------- -->#}
-                
-=======
+
 
         {% if is_granted('ROLE_ADMIN') %}
             <br>
             <a href="{{ path('region_new') }}">Créer une nouvelle région</a>
         {% endif %}
->>>>>>> 8a245b8a93875077fb00da5a98dd53b40aa9999e
+
         </tbody>
 	</table> 
 	</div>   
