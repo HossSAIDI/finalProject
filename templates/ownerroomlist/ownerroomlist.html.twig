@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %} {#OWNEER ANNOUNCEMENTS LIST#}
+
+{% block title %}Your announcements{% endblock %}
+
+{% block body %}
+
+
+<div id="colorlib-rooms" class="colorlib-light-grey">
+	<div class="container" >
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+				<h2>Vos annonces </h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row text-center">
+	<div class="col-md-10 col-md-offset-1 animate-box">
+		<button class="btn btn-success"><a href={{ path('room_new') }} style="color:black; font-size:18px;">Ajouter une nouvelle chambre</a></button>
+	</div>
+</div>
+
+<br><br><br>
+
+<div id="colorlib-contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 animate-box">
+				<h3 class="text-center">Vos annonces : </h3>
+				<br><br><br>
+                 {% for room in rooms %}
+             <div class="row contact-info-wrap">
+				<div class="col-md-3">
+						<p style="font-size:16px;">{{ room.price }}</p>
+					</div>
+					<div class="col-md-3">
+						<p style="font-size:16px;">{{ room.summary }}</p>
+					</div>
+					<div class="col-md-3">
+						<p style="font-size:16px;">{{ room.description }}</p>
+					</div>
+					<div class="col-md-3">
+						<p style="font-size:16px;">{{ room.address }}</p>
+					</div>
+					<div class="col-md-3">
+						<p style="font-size:16px;">{{ room.superficy }}</p>
+					</div>
+					<div class="col-md-3">
+						<p style="font-size:16px;">{{ room.capacity }}</p>
+					</div>
+		
+<div class="row text-center">
+	<div class="col-md-10 col-md-offset-1 animate-box">
+		<button class="btn btn-success"><a href="{{ path('room_edit', {'id': room.id}) }} style="color:black; font-size:18px;">Editer</a></button>
+	</div>
+</div>
+
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connection{% endblock %}
+
+{% block body %}
+<div id="colorlib-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 animate-box">
+					<div class="col-md-10 col-md-offset-1 animate-box">
+						<h3>Connectez-vous</h3>
+						<form method="post">
+						{% if error %}
+                            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                        {% endif %}
+                    
+                        {% if app.user %}
+                            <div class="mb-3">
+                                Vous êtes connecté en tant que {{ app.user.username }}, <a href="{{ path('app_logout') }}">se déconnecter</a>
+                            </div>
+                        {% endif %}
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="inputEmail">Adresse e-mail</label>
+   									<input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
+								</div>
+							</div>
+
+							<div class="row form-group">
+								<div class="col-md-12">
+									<label for="inputPassword">Mot de passe</label>
+    								<input type="password" name="password" id="inputPassword" class="form-control" required>
+								</div>
+							</div>
+							<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+							<div class="form-group text-center">
+								<button class="btn btn-lg btn-primary" type="submit">
+                                   Se connecter
+                                </button>
+							</div>
+
+						</form>		
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}

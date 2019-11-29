@@ -1,0 +1,54 @@
+{% extends 'base.html.twig'%}
+
+{% block body %}
+
+	<div id="colorlib-rooms" class="colorlib-light-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+					<h2>UnavailablePeriod index</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<br><br><br>
+	
+ <br><br><br>
+
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<table class="table table-hover">
+        <thead>
+            <tr>
+                <th>BeginDate</th>
+                <th>EndDate</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for unavailable_period in unavailable_periods %}
+            <tr>
+                <td>{{ unavailable_period.beginDate ? unavailable_period.beginDate|date('Y-m-d') : '' }}</td>
+                <td>{{ unavailable_period.endDate ? unavailable_period.endDate|date('Y-m-d') : '' }}</td>
+                <td>
+                    <a href="{{ path('unavailable_period_show', {'id': unavailable_period.id}) }}">show</a>
+                    <a href="{{ path('unavailable_period_edit', {'id': unavailable_period.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('unavailable_period_new') }}">Create new</a>
+    
+      
+		</div>
+		<div class="col-lg-2"></div>
+	</div>
+{% endblock %}

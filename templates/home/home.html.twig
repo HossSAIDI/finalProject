@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<title>{% block title %}Bienvenue !{% endblock %}</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="description" content="" />
+    	<meta name="keywords" content="" />
+    	<meta name="author" content="" />
+    
+      <!-- Facebook and Twitter integration -->
+    	<meta property="og:title" content=""/>
+    	<meta property="og:image" content=""/>
+    	<meta property="og:url" content=""/>
+    	<meta property="og:site_name" content=""/>
+    	<meta property="og:description" content=""/>
+    	<meta name="twitter:title" content="" />
+    	<meta name="twitter:image" content="" />
+    	<meta name="twitter:url" content="" />
+    	<meta name="twitter:card" content="" />
+    
+    	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    	
+    	<!-- Animate.css -->
+    	<link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
+    	<!-- Icomoon Icon Fonts-->
+    	<link rel="stylesheet" href="{{ asset('assets/css/icomoon.css') }}">
+    	<!-- Bootstrap  -->
+    	<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
+    
+    	<!-- Magnific Popup -->
+    	<link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+    
+    	<!-- Flexslider  -->
+    	<link rel="stylesheet" href="{{ asset('assets/css/flexslider.css') }}">
+    
+    	<!-- Owl Carousel -->
+    	<link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    	<link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.min.css') }}">
+    	
+    	<!-- Date Picker -->
+    	<link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datepicker.css') }}">
+    	<!-- Flaticons  -->
+    	<link rel="stylesheet" href="{{ asset('assets/fonts/flaticon/font/flaticon.css') }}">
+    
+    	<!-- Theme style  -->
+    	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+
+    	<!-- Modernizr JS -->
+    	<script src="{{ asset('assets/js/modernizr-2.6.2.min.js') }}"></script>
+    	<!-- FOR IE9 below -->
+    	<!--[if lt IE 9]>
+    	<script src="js/respond.min.js"></script>
+    	<![endif]-->
+
+	</head>
+	<body>
+		
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="colorlib-logo"><a href="index.html">Couette & Cafe</a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li>{{ render_bootstrap_menu('main') }}</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<aside id="colorlib-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url({{ asset('assets/images/img_bg_5.jpg') }});">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h2>Bienvenue à Couette et café</h2>
+				   					<h1>Welcome!</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url({{ asset('assets/images/img_bg_1.jpg') }});">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h2>Discover &amp; Enjoy</h2>
+				   					<h1>Everything you need in couette et café</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url({{ asset('assets/images/img_bg_3.jpg') }});">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluids">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h2>You are invited</h2>
+				   					<h1>We know how to please you</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url({{ asset('assets/images/img_bg_4.jpg') }});">
+			   		<div class="overlay"></div>
+			   		<div class="container-fluid">
+			   			<div class="row">
+				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+				   				<div class="slider-text-inner text-center">
+				   					<h2>Come &amp; enjoy the unforgetable nights</h2>
+				   					<h1>In the heart of couette et café</h1>
+				   				</div>
+				   			</div>
+				   		</div>
+			   		</div>
+			   	</li>	   	
+			  	</ul>
+		  	</div>
+		</aside>
+
+		<div id="colorlib-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 animate-box text-center">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-reception"></i>
+							</span>
+							<h3>24/7 chambres disponibles </h3>
+							<p>Nous somme a votre service pour toute réservation 7/7 et 24/24 </p>
+						</div>
+					</div>
+					<div class="col-md-3 animate-box text-center">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-herbs"></i>
+							</span>
+							<h3> Habitez en plein nature</h3>
+							<p>Profitez d'un séjour en plein nature sur les plages les plus belles du mondes </p>
+						</div>
+					</div>
+					<div class="col-md-3 animate-box text-center">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-car"></i>
+							</span>
+							<h3>Visitez tous les coins du monde</h3>
+							<p>Nous avons des chambres dans les 4 coins du monde, profitez d'un séjour à l'international</p>
+						</div>
+					</div>
+					<div class="col-md-3 animate-box text-center">
+						<div class="services">
+							<span class="icon">
+								<i class="flaticon-cheers"></i>
+							</span>
+							<h3>Voyagez et dégustez </h3>
+							<p>Profitez de la gastronomie internationale et savourez les délices des plats des 4 coins du monde </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="colorlib-rooms" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+						<span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span>
+						<h2>S'incrire en tant que :</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+						<a href="/register_client"><button id="Regionbtn" class="btn btn-primary btn-demo">Client </button></a>
+						<a href="/register"><button id="Regionbtn" class="btn btn-primary btn-learn">Propriétaire</button></a>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+						<span><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i></span>
+						<h2>Avez vous déja un compte ?</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+						<a href="/login"><button id="Regionbtn" class="btn btn-success">Se connecter</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="colorlib-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-3 colorlib-widget">
+						<h4>Couette et café</h4>
+					</div>
+					<div class="col-md-3 colorlib-widget">
+						<h4>Quick Links</h4>
+					</div>
+					<div class="col-md-3">
+						<h4>Recents Blog Post</h4>
+					</div>
+
+					<div class="col-md-3 col-md-push-1">
+						<h4>Contact Information</h4>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+	
+	{% block javascripts %}
+        <!-- Bootstrap core JavaScript -->
+        <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+	
+    	<!-- jQuery -->
+    	<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+    	<!-- jQuery Easing -->
+    	<script src="{{ asset('assets/js/jquery.easing.1.3.js') }}"></script>
+    	<!-- Waypoints -->
+    	<script src="{{ asset('assets/js/jquery.waypoints.min.js') }}"></script>
+    	<!-- Flexslider -->
+    	<script src="{{ asset('assets/js/jquery.flexslider-min.js') }}"></script>
+    	<!-- Owl carousel -->
+    	<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+    	<!-- Magnific Popup -->
+    	<script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
+    	<script src="{{ asset('assets/js/magnific-popup-options.js') }}"></script>
+    	<!-- Date Picker -->
+    	<script src="{{ asset('assets/js/bootstrap-datepicker.js') }}"></script>
+    	<!-- Main -->
+    	<script src="{{ asset('assets/js/main.js') }}"></script>
+    {% endblock %}
+	</body>
+</html>

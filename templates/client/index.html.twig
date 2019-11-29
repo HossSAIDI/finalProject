@@ -1,0 +1,67 @@
+{% extends 'base.html.twig'%}
+
+{% block body %}
+
+
+	<div id="colorlib-rooms" class="colorlib-light-grey" style="background-image : url('{{ asset('assets/images/img_bg_3.jpg')}}');background-repeat:no-repeat;background-position:center center; width:100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+					<h2>Client index </h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<br><br><br>
+	
+	<div class="row text-center">
+    	<div class="col-md-10 col-md-offset-1 animate-box">
+    		<button class="btn btn-success"><a href="{{ path('client_new') }}" style="color:black; font-size:18px;">Create new</a></button>
+    	</div>
+	</div>
+   
+	<br><br><br>
+
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>FamilyName</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Country</th>
+                <th>PhoneNumber</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for client in clients %}
+            <tr>
+                <td>{{ client.firstname }}</td>
+                <td>{{ client.familyName }}</td>
+                <td>{{ client.email }}</td>
+                <td>{{ client.gender }}</td>
+                <td>{{ client.country }}</td>
+                <td>{{ client.phoneNumber }}</td>
+                <td>
+                    <a href="{{ path('client_show', {'id': client.id}) }}"style="color: blue; font-size: 16px;">show&nbsp;&nbsp;&nbsp;</a>
+                    <a href="{{ path('client_edit', {'id': client.id}) }}"style="color: green; font-size: 16px;">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+		</div>
+		<div class="col-lg-2"></div>
+	</div>
+
+{% endblock %}

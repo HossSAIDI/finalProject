@@ -1,0 +1,50 @@
+{% extends 'base.html.twig'%}
+{% block body %}
+
+	<div id="colorlib-rooms" class="colorlib-light-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+					<h2>Comment index </h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<br><br><br>
+	
+
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Commentary</th>
+                <th>Grade</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for comment in comments %}
+            <tr>
+                <td>{{ comment.commentary }}</td>
+                <td>{{ comment.grade }}</td>
+                <td>
+                    <a href="{{ path('comment_show', {'id': comment.id}) }}">show</a>
+                    <a href="{{ path('comment_edit', {'id': comment.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+		</div>
+		<div class="col-lg-2"></div>
+	</div>
+{% endblock %}

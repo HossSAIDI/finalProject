@@ -1,0 +1,21 @@
+{% extends 'base.html.twig'%}
+
+
+{% block body %}
+<div id="colorlib-rooms" class="colorlib-light-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+					<h2>Créer une nouvelle chambre</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+<title>New Room</title>
+
+  
+
+    {{ include('room/_form.html.twig', {'button_label': "Sauvegarder"}) }}
+
+    <a href="{{ path('room_index') }}">Retour</a>
+{% endblock %}

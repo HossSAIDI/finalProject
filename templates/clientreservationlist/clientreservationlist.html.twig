@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Your Reservations{% endblock %}
+
+{% block body %}
+
+<div id="colorlib-rooms" class="colorlib-light-grey">
+	<div class="container" >
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+				<h2>List of reservations</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row text-center">
+	<div class="col-md-10 col-md-offset-1 animate-box">
+		<button class="btn btn-success"><a href="{{ path('reservation_new', {'id': app.user.clients.id}) }}" style="color:black; font-size:18px;">Make new reservation</a></button>
+	</div>
+</div>
+
+<br><br><br>
+
+<div id="colorlib-contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 animate-box">
+				<h3 class="text-center">Here are your reservations!</h3>
+				<br><br><br>
+				 {% for reservation in reservations %}
+				<div class="row contact-info-wrap">
+					<div class="col-md-3">
+						<p style="font-size:16px;">{{ reservation.id }}</p>
+					</div>
+					<div class="col-md-3">
+						<pstyle="font-size:16px;">{{ reservation.beginDate ? reservation.beginDate|date('Y-m-d') : '' }}</p>
+					</div>
+					<div class="col-md-3">
+						<p style="font-size:16px;">{{ reservation.endDate ? reservation.endDate|date('Y-m-d') : '' }}</p>
+					</div>
+					<div class="col-md-3">
+						<p style="font-size:16px;"><a href="{{ path('reservation_edit', {'id': reservation.id}) }}" >Edit Reservation</a></p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+     
+{% endblock %}

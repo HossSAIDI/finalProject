@@ -1,0 +1,44 @@
+
+{{ form_start(form) }}
+
+<div id="colorlib-contact">
+	<div class="container">
+		<div class="row">
+        	<div class="col-md-10 col-md-offset-1 animate-box">
+        		<h3>Describe your room</h3>
+        		<div class="row form-group">
+        			<div class="col-md-12">
+                        {{ form_row(form.firstname) }}
+                        </div>
+        		</div>
+        		
+        		<div class="row form-group">
+        			<div class="col-md-12">
+                        {{ form_row(form.familyName) }}
+                        </div>
+        		</div>
+        		
+        		<div class="row form-group">
+        			<div class="col-md-6">
+   						 {{ form_row(form.gender) }}
+   						 </div>
+        		</div>
+        		
+        		<div class="row form-group">
+        			<div class="col-md-6">
+                        {{ form_row(form.country) }}
+                        </div>
+        		</div>
+        		
+        		<div class="row form-group">
+        			<div class="col-md-12">
+  					  {{ form_row(form.phoneNumber) }}
+   
+      	<div class="form-group text-center">
+        			<button class="btn btn-success">{{ button_label|default('Save') }}</button>
+        		</div>
+        	</div>
+        </div>
+    </div>
+</div>
+{{ form_end(form) }}

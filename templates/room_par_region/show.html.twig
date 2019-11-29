@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Region{% endblock %}
+
+{% block body %}
+	<div id="colorlib-rooms" class="colorlib-light-grey" style="background-image : url('{{ asset('assets/images/img_bg_3.jpg')}}');background-repeat:no-repeat;background-position:center center; width:100%;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center colorlib-heading animate-box">
+					<h2>Découvrez nos chambres dans la région {{ region.name }} </h2>
+				</div>
+			</div>
+		</div>
+	</div>
+    <h1></h1>
+
+	<br><br><br>
+
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8">
+			<table class="table table-hover">
+        <thead>
+            <tr>
+               
+                <th>Résumé</th>
+                <th>Description</th>
+                <th>Capacité</th>
+                <th>Superficie</th>
+                <th>Prix</th>
+                <th>Adresse</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+        {% for room in region.rooms %}
+            <tr>
+               
+                <td>{{ room.summary }}</td>
+                <td>{{ room.description }}</td>
+                <td>{{ room.capacity }}</td>
+                <td>{{ room.superficy }}</td>
+                <td>{{ room.price }}</td>
+                <td>{{ room.address }}</td>
+                {% if is_granted('ROLE_CLIENT') or is_granted('ROLE_ADMIN')   %}
+                <td> <center> <a href="{{ path('room_show' , {'id' : room.id })  }}">Aperçu</a></center></td>
+                {% endif %}
+
+                {% if  is_granted('ROLE_ADMIN')   %}
+                    <a href="{{ path('region_edit', {'id': room.id}) }}">Editer cette région</a>
+                {% endif %}
+                
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">Aucune occurence trouvée</td>
+            </tr>
+            
+              
+      
+          
+           {% endfor %}   
+        </tbody>
+    </table>
+</div>
+	<div class="col-lg-2"></div>
+</div>
+  
+{% endblock %}
+   
+  
